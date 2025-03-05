@@ -7,12 +7,19 @@ Check out the deployed app on Render: https://email-sms-spam-detector-sxuq.onren
 A machine learning-based web application that classifies messages as Spam or Not Spam using Natural Language Processing (NLP). The model is trained on a labeled dataset of SMS messages and deployed using Streamlit.
 
 📂 Project Structure
+
 Email-SMS-Spam-Detector/
+
 │── app.py                # Streamlit web app
+
 │── sms_spam_detection.ipynb # Jupyter Notebook (model training)
+
 │── vectorizer.pkl        # TF-IDF vectorizer (saved model)
+
 │── model.pkl             # Trained Naïve Bayes model
+
 │── requirements.txt      # Dependencies
+
 │── README.md             # Project Documentation
 
 
