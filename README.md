@@ -7,9 +7,13 @@ A machine learning-based web application that classifies messages as Spam or Not
 📌 Features
 
 ✅ Text preprocessing using stopword removal & stemming
+
 ✅ TF-IDF Vectorization for text feature extraction
+
 ✅ Naïve Bayes Classification for message prediction
+
 ✅ User-friendly Web Interface using Streamlit
+
 ✅ Deployed on Render for easy access
 
 📝 Dataset
@@ -64,6 +68,9 @@ Deploy on Render.
 🙌 Acknowledgements
 
 NLTK for text preprocessing
+
 Scikit-learn for model training
+
 Streamlit for UI development
+
 Render for free hosting
