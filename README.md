@@ -19,9 +19,13 @@ ham represents non-spam messages.
 spam represents unwanted promotional messages.
 The dataset undergoes preprocessing, including:
 Lowercasing
+
 Tokenization
+
 Stopword removal
+
 Stemming
+
 TF-IDF vectorization
 
 🏗 Model Training & Deployment
@@ -29,17 +33,28 @@ TF-IDF vectorization
 🔹 1. Data Preprocessing
 
 Convert text to lowercase.
-Remove special characters and stopwords.
-Apply stemming.
 
-🔹 2. Feature Extraction
+Tokenize text into individual words.
 
-Use TF-IDF Vectorization to transform text into numerical data.
+Remove non-alphanumeric characters.
+
+Remove stopwords (common words that don’t add much meaning, e.g., "the", "is").
+
+Apply stemming (reducing words to their root form, e.g., "running" → "run").
+
+🔹 2. Feature Extraction (TF-IDF Vectorization)
+
+After preprocessing, use Term Frequency-Inverse Document Frequency (TF-IDF) to convert text into a numerical representation:
+
+Term Frequency (TF): Measures how frequently a term appears in a document.
+
+Inverse Document Frequency (IDF): Reduces the importance of common words across multiple documents.
+
+Using TfidfVectorizer from Scikit-learn, we transform the processed text into a feature matrix for model training.
 
 🔹 3. Model Training
 
-Train a Multinomial Naïve Bayes Classifier using Scikit-learn.
-Save the trained model and vectorizer using Pickle.
+used Multinomial Naïve Bayes, a probabilistic algorithm effective for text classification tasks.
 
 🔹 4. Deployment
 
